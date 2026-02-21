@@ -1,0 +1,104 @@
+<!-- =========================
+ENGLISH SCHOOL WEB - VERSÃO COMPLETA RESPONSIVA
+HTML + CSS + JS
+Com: slideshow, anúncios, acerca, sobre nós, pesquisa
+========================= -->
+
+<!-- =========================
+index.html (Página inicial com animação + pesquisa + anúncios)
+========================= -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English School</title>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+<header class="nav">
+ <div class="logo">TEACHER BILL ONLINE  CLASS</div>
+ <nav>
+  <a href="login.html">Login</a>
+  <a href="acerca.html">Acerca</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="curso.html">Cursos</a>
+  <a href="aluno.html">Alunos </a>
+  <a href="Professor.html">Professor </a>
+  <a href="Adm.html">Administrador </a>
+  <a href="Pagamento.html">Pagamentos</a>
+  <a href="Contato.html">Contato</a>
+
+ </nav>
+</header>
+
+<div class="hero">
+ <img id="slide" src="imagens/Im7.jpg" class="hero-img">
+ <img id="slide" src="imagens/Im5.jpg" class="hero-img">
+ <img id="slide" src="imagens/im6.jpg" class="hero-img">
+
+  <div class="hero-overlay">
+    <h1>Aprenda Inglês Online</h1>
+    <p>Do Básico ao Avançado</p>
+    
+  </div>
+  
+</div>
+
+<section class="search-box">
+ <input id="pesquisa" placeholder="Pesquisar aulas ou tópicos...">
+ <button onclick="pesquisar()">Pesquisar</button>
+ <div id="resultadoPesquisa"></div>
+</section>
+
+<section class="ads">
+ <h3>Anúncios</h3>
+ <div class="ads-grid">
+  <div class="ad">📘 Novo módulo de conversação disponível</div>
+  <div class="ad">🎧 Áudios de pronúncia adicionados</div>
+  <div class="ad">🏆 Complete aulas e ganhe certificado</div>
+ </div>
+</section><br><br>
+
+<!-- =========================
+ANÚNCIOS ANIMADOS
+========================= -->
+
+<section class="anuncios">
+
+<h2 class="titulo">Anúncios / Highlights</h2>
+ <div class="anuncios-sobre">
+       <p id="anuncioText"></p>
+    <p id="anuncioTextPt" style="font-style:italic;color:#00ff4c;"></p>
+  </div>
+<div class="banner">
+<img id="imgAds" src="imagens/Uige.jpg">
+</div>
+
+</section>
+
+<!-- =========================
+ANÚNCIOS ANIMADOs
+========================= -->
+
+<section class="anuncios-sobre">
+  
+  <div class="anuncio-box">
+    <p id="anuncioText">Eng Ndunguini Dias</p>
+     <p id="anuncioText">Dadivanio Dias</p>
+    <p id="anuncioTextPt" style="font-style:italic;color:#052aff;"></p>
+  </div>
+</section>
+
+</div>
+
+
+</div>
+<script defer src="js/app.js"></script>
+<script defer src="js/data.js"></script>
+<footer class="rodape">
+  © Plataforma de Ensino Online Teacher Ditunga  2026
+</footer>
+</body>
+</html>
